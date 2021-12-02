@@ -30,11 +30,11 @@ python migrator.py -h
 
 Current schema:
 
-![Query 1](current_schema.JPG)
+![Query 1](current_schema1.JPG)
 
 Ideal schema:
 
-![Query 1](ideal_schema.JPG)
+![Query 1](ideal_schema1.JPG)
 
 
 
