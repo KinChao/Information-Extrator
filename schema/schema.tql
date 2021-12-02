@@ -1,0 +1,26 @@
+define
+
+target sub entity,
+	owns name,
+	plays target-entity1-association:associated-target;
+
+description sub entity,
+	owns des,
+	plays entity-des-association:associated-des;
+
+entity1 sub entity,
+	owns en-name,
+	plays entity-des-association:associated-entity,
+	plays target-entity1-association:associated-entity1;
+
+target-entity1-association sub relation,
+	relates associated-target,
+	relates associated-entity1;
+
+entity-des-association sub relation,
+	relates associated-des,
+	relates associated-entity;
+
+des sub attribute, value string;
+en-name sub attribute, value string;
+name sub attribute, value string;
