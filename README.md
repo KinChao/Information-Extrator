@@ -36,6 +36,16 @@ Ideal schema:
 
 ![Query 1](ideal_schema1.JPG)
 
+Make a queey of the tags in TypeDB workbase:
+```bash
+match
+$En isa entity1, has en-name 'oxidative';
+$De isa description;
+$2 ($En, $De) isa entity-des-association;
+get $En, $De, $2;
+
+#change 'oxidative' to other tags like 'peroxidation' to make other queries.
+```
 
 
 
